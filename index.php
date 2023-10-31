@@ -12,7 +12,6 @@
     use Dotenv\Dotenv;
     $dotenv = Dotenv::createImmutable(__DIR__);
     $dotenv->load();
-    echo $_ENV["PORT"]
   ?>
   
   <div class="ContainerPrincipal" >
