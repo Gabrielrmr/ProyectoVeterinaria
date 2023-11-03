@@ -12,8 +12,14 @@
     use Dotenv\Dotenv;
     $dotenv = Dotenv::createImmutable(__DIR__);
     $dotenv->load();
+    require_once (__DIR__ ."/controller/user_controller.php");
+    // require_once(__DIR__ ."/process/registro_rol.php");
   ?>
    <h1>Veterinaria AnimalSalud</h1>
+   <?php
+      require_once(__DIR__ ."/process/registro_process.php");
+      echo (new processRegistro) -> validacionRegistro();
+   ?>
   <div class="ContainerPrincipal" >
     <div class="Iconos">
       <div class="Icon">
@@ -31,16 +37,12 @@
     </div>
     <div class="RegistroContainer">
       <h2>Registro en la Clínica Veterinaria</h2>
-      <form class="Registro" action="" method="post">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="text" name="username" placeholder="Nombre de usuario" required>
-        <select name="Rol" id="Rol">
-          <option value="Usuario">Usuario</option>
-          <option value="Administrador">Administrador</option>
-        </select>
-        <input type="email" name="email" placeholder="Correo Electrónico" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Registrarse</button>
+      <form class="Registro" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" value="<?php echo $_POST['nombre'] ?? ""?>">
+        <input type="text" name="username" placeholder="Nombre de usuario" value="<?php echo $_POST['username'] ?? ""?>">
+        <input type="email" name="email" placeholder="Correo Electrónico" value="<?php echo $_POST['email'] ?? ""?>">
+        <input type="password" name="password" placeholder="Contraseña" value="<?php echo $_POST['password'] ?? ""?>">
+        <button name="Registrarse" type="submit">Registrarse</button>
       </form>
     </div>  
   </div>
