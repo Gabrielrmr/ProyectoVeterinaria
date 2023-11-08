@@ -1,85 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Header{
+  width: 100%;
+  height: 6vw;
+  background-color: #8cc1d3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Botones{
+  display: flex;
+  gap: 2vw;
+}
+.RegistrarseHeader,.InicioSesionHeader{
+  width: 8vw;
+  height: 2.5vw;
+  border-radius: 1.5vw;
+  border: none;
+  background-color: #007BFF;
+  font-size: 0.9vw;
+  color: #fff;
+}
 body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: lightblue;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: lightblue;
 }
 .ContainerPrincipal{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    padding-left: 2vw;
-    gap: 4vw;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding-left: 2vw;
+  gap: 4vw;
 }
 .Iconos{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
 }
 .Icon{
-    width: 7vw;
-    height: 7vw;
-    border-radius: 100%;
-    border: 1px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 100%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Icon img{
-    width: 4vw;
+  width: 4vw;
 }
 .ImageDoctora img{
-    width: 40vw;
+  width: 40vw;
 }
-.RegistroContainer {
-    background-color: lightblue;
-    border-radius: 1vw;
-    padding: 1.5vw;
-    width: 35vw;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+.InicioRegistro{
+  position: relative;
+  height: 22vw;
+}
+.IniciarContainer{
+  position: absolute;
+  height: 21.3vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+.RegistroContainer,.IniciarContainer{
+  background-color: #8cc1d3;
+  border-radius: 1vw;
+  padding: 1.5vw;
+  width: 25vw;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
   
-  .RegistroContainer h2 {
-    font-size: 1.5em;
-    color: #333;
-    text-align: justify;
-  }
+.RegistroContainer h2,.IniciarContainer h2 {
+  font-size: 1.5em;
+  color: #000;
+  text-align: justify;
+}
   
-  .RegistroContainer form {
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;
-  }
+.RegistroContainer form, .IniciarContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  height: min-content;
+}
   
-  .RegistroContainer input {
-    padding: 0.7vw;
-    border: 0.1vw solid #ccc;
-    border-radius: 0.5vw;
-    font-size: 1em;
-    width: 20vw;
-  }
+.RegistroContainer input, .IniciarContainer input {
+  padding: 0.7vw;
+  border: 0.1vw solid #ccc;
+  border-radius: 0.5vw;
+  font-size: 1em;
+  width: 20vw;
+} 
   
-  .RegistroContainer select {
-    padding: 0.6vw;
-    border: 0.1vw solid #ccc;
-    border-radius: 0.5vw;
-    font-size: 1em;
-    width: 21.5vw;
-  }
+.RegistroContainer button, .IniciarContainer button {
+  padding: 1vw;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 1vw;
+  font-size: 1.2em;
+  cursor: pointer;
+  width: 20.1vw;
+}
   
-  .RegistroContainer button {
-    padding: 1vw;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 1vw;
-    font-size: 1.2em;
-    cursor: pointer;
-    width: 21.5vw;
-  }
+.RegistroContainer button:hover, .IniciarContainer button:hover {
+  background-color: #0056b3;
+}
   
-  .RegistroContainer button:hover {
-    background-color: #0056b3;
-  }
   
