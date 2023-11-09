@@ -13,7 +13,6 @@
     $dotenv = Dotenv::createImmutable(__DIR__);
     $dotenv->load();
     require_once (__DIR__ ."/controller/user_controller.php");
-    // require_once(__DIR__ ."/process/registro_rol.php");
     require_once (__DIR__ ."/process/login.php");
   ?>
   <?php
@@ -24,7 +23,7 @@
     <div class="LogoHeader"></div>
     <h1>Veterinaria AnimalSalud</h1>
     <div class="Botones">
-      <button class="InicioSesionHeader">Iniciar Sesion</button>
+      <button  class="InicioSesionHeader">Iniciar Sesion</button>
       <button class="RegistrarseHeader">Registrarse</button>
     </div>
   </header>
@@ -49,7 +48,7 @@
         <form class="InicioSesion" method="post">
           <input type="text" name="UsernameInicio" placeholder="Username">
           <input type="password" name="PasswordInicio" placeholder="Password">
-          <button class="Iniciar" type="submit">Iniciar Sesion</button>
+          <button class="Iniciar" type="submit" name="Iniciar">Iniciar Sesion</button>
        </form>
       </div>
       <div class="RegistroContainer">
