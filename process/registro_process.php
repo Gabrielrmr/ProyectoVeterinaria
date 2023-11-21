@@ -6,7 +6,7 @@ class processRegistro extends conexion{
             if (empty($_POST['nombre']) or empty($_POST['username']) or empty($_POST['email']) or empty($_POST['password']) ){
                 echo "los campos son todos obligatorios";
             }else{
-                $userc= new user_controller();
+                $userc= new UserController();
                 $user= new User;
                 $Conect=$userc->connect();
                 $username = mysqli_real_escape_string($Conect,$_POST['username']);

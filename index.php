@@ -15,10 +15,6 @@
     require_once (__DIR__ ."/controller/user_controller.php");
     require_once (__DIR__ ."/process/login.php");
   ?>
-  <?php
-    require_once(__DIR__ ."/process/registro_process.php");
-    echo (new processRegistro) -> validacionRegistro();
-  ?>
   <header class="Header">
     <div class="LogoHeader"></div>
     <h1>Veterinaria AnimalSalud</h1>
@@ -60,6 +56,10 @@
           <input type="password" name="password" placeholder="Contraseña" value="<?php echo $_POST['password'] ?? ""?>">
           <button name="Registrarse" type="submit">Registrarse</button>
         </form>
+        <?php
+        require_once(__DIR__ ."/process/registro_process.php");
+        echo (new processRegistro) -> validacionRegistro();
+        ?>
       </div>  
     </div>
   </div>
