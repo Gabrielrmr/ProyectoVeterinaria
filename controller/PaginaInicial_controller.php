@@ -8,11 +8,4 @@ class controlador
             $_SESSION['select'] = true;
         }
     }
-    public function closeSession(){
-        if(isset($_POST['salir'])) {
-            session_start();
-            $_SESSION['select'] = false;
-        }
-
-    }
 }

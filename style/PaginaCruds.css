@@ -22,7 +22,7 @@ header{
 }
 header h1{
     font-family: "Arvo";
-    font-size: 2.4vw;
+    font-size: 2.1vw;
 }
 .LogoHeader{padding-top: 2vw;width: min-content;}
 .LogoHeader img{
@@ -33,9 +33,9 @@ Header button{
 
 border: none;
 
-width: 10vw;
+width: 9vw;
 
-height: 3.5vw;
+height: 3vw;
 
 color: white;
 
@@ -43,7 +43,7 @@ border-radius: 2vw;
 
 background-color: rgb(89 89 133);
 
-font-size: 1.5vw;
+font-size: 1.3vw;
 }
 main{
     display: grid;
@@ -58,8 +58,36 @@ main{
     border-top-right-radius: 4vh;
     margin-right: 2vh;
     gap: 1.3vw;
-    padding-top: 2vw;
+    padding-top: 4vw;
     padding-right: 2vw;
+    align-items: end;
+    position: relative;
+}
+.Regresar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+    border: none;
+    right: 22vw;
+    background-color: #b1afaf;
+    cursor: pointer;
+    z-index: 2;
+    top: 6vw;
+}
+.Regresar img{
+    width: 3vw;
+}
+.MostraTabla{
+    background-color: rgb(89 89 133);
+    width: 67vw;
+    height: 36vw;
+    position: absolute;
+    left: 4vw;
+    border-radius: 3vw;
 }
 .OpcionesUsuario article{
     display: flex;
@@ -71,7 +99,7 @@ main{
     
 display: flex;
     
-justify-content: end;
+width: min-content;
 }
 .Opcion{
     display: flex;
@@ -91,4 +119,5 @@ justify-content: end;
 .Opcion h3{
     font-size: 1vw;
     font-family: "Catamaran";
+    color: white;
 }

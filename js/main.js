@@ -1,5 +1,6 @@
 let BotonInicio=document.querySelector('.InicioSesionHeader');
 let BotonRegistro=document.querySelector('.RegistrarseHeader');
+let BotonRegreso=document.querySelector('.Regresar');
 
 BotonInicio.addEventListener('click', e => {
     document.querySelector('.RegistroContainer').style.display = 'none';

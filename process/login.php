@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['Iniciar'])){
 
         if (password_verify($password, $passwordA)) {
             echo "Contraseña Correcta";
-            header("Location: crud.php");
+            header("Location: PaginaCruds.php");
         } else {
             echo "Contraseña Incorrecta";
         }
