@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.AgregarVacuna{
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+.AgregarVacuna button{
+    background-color: #42426d;
+    border: none;
+    width: 7vw;
+    height: 2.5vw;
+    border-radius: 2vw;
+    color: white;
+    font-size: 0.7vw;
+}
+.Table_Vacunas{
+
+}

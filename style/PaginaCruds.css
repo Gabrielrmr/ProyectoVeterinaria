@@ -63,24 +63,6 @@ main{
     align-items: end;
     position: relative;
 }
-.Regresar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 5vw;
-    height: 5vw;
-    border-radius: 100%;
-    border: none;
-    right: 22vw;
-    background-color: #b1afaf;
-    cursor: pointer;
-    z-index: 2;
-    top: 6vw;
-}
-.Regresar img{
-    width: 3vw;
-}
 .MostraTabla{
     background-color: rgb(89 89 133);
     width: 67vw;

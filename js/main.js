@@ -4,9 +4,9 @@ let BotonRegreso=document.querySelector('.Regresar');
 
 BotonInicio.addEventListener('click', e => {
     document.querySelector('.RegistroContainer').style.display = 'none';
-    document.querySelector('.IniciarContainer').style.display = 'block';
+    document.querySelector('.IniciarContainer').style.display = 'flex';
 } )
 BotonRegistro.addEventListener('click', e => {
     document.querySelector('.IniciarContainer').style.display = 'none';
-    document.querySelector('.RegistroContainer').style.display = 'block';
+    document.querySelector('.RegistroContainer').style.display = 'flex';
 } )

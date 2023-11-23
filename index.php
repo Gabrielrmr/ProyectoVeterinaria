@@ -16,7 +16,9 @@
     require_once (__DIR__ ."/process/login.php");
   ?>
   <header class="Header">
-    <div class="LogoHeader"></div>
+    <div class="LogoHeader">
+      <img src="./imagenes/Logo.png" alt="">
+    </div>
     <h1>Veterinaria AnimalSalud</h1>
     <div class="Botones">
       <button  class="InicioSesionHeader">Iniciar Sesion</button>
@@ -37,10 +39,12 @@
     </div>
     <div class="ImageDoctora">
       <img src="./imagenes/Doctora.svg" alt="">
+      <h2>Porque ellos son parte de tu familia.</h2>
     </div>
     <div class="InicioRegistro">
       <div class="IniciarContainer">
         <h2>Inicia Sesion</h2>
+        <img src="./imagenes/user.png" alt="">
         <form class="InicioSesion" method="post">
           <input type="text" name="UsernameInicio" placeholder="Username">
           <input type="password" name="PasswordInicio" placeholder="Password">

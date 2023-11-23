@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -10,6 +12,11 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.Header h1{
+  font-size: 2vw;
+  font-family: "Arvo";
+  color: white;
 }
 .Botones{
   display: flex;
@@ -29,12 +36,20 @@ body{
   margin: 0;
   box-sizing: border-box;
   background-color: #b1afaf;
+  position: relative;
+}
+.LogoHeader img{
+  display: flex;
+  width: 11vw;
+  position: absolute;
+  top: -1vw;
+  left: -1vw;
+  filter: invert(1);
 }
 .ContainerPrincipal{
   display: flex;
-  height: 100vh;
   align-items: center;
-  gap: 4vw;
+  gap: 51vw;
 }
 .Iconos{
   display: flex;
@@ -42,14 +57,14 @@ body{
   gap: 1.5vw;
   background: linear-gradient(180deg, #42426d 63%, #000000);
   width: 9vw;
-  height: 50vw;
-  padding-top: 8vw;
+  height: 43.66vw;
+  padding-top: 7vw;
 }
 .Icon{
   width: 7vw;
   height: 7vw;
   border-radius: 100%;
-  border: 1px solid;
+  border: 0.1vw solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,25 +72,33 @@ body{
 .Icon img{
   width: 4vw;
 }
+.ImageDoctora{
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+position: absolute;
+
+top: 7vw;
+
+left: 18vw;
+}
 .ImageDoctora img{
-  width: 40vw;
+  width: 32vw;
+}
+.ImageDoctora h2{
+  font-size: 1.5vw;
+  font-family: 'Arvo';
 }
 .InicioRegistro{
   position: relative;
-  height: 22vw;
+  height: 29vw;
 }
 .IniciarContainer{
-  position: absolute;
-  height: 21.3vw;
-  z-index: 2;
   display: flex;
-  flex-direction: column;
-  gap: 4vw;
-}
-.RegistroContainer{
-  display: none;
-}
-.RegistroContainer,.IniciarContainer{
   background: linear-gradient(132deg  , #42426d 75%, #000000);
   border-radius: 1vw;
   padding: 1.5vw;
@@ -83,18 +106,50 @@ body{
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: absolute;
+  height: 27vw;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+}
+.IniciarContainer img{
+  
+width: 6vw;
+  
+filter: invert(1);
+}
+.RegistroContainer{
+  display: none;
+}
+.RegistroContainer{
+  display: flex;
+  background: linear-gradient(132deg  , #42426d 75%, #000000);
+  border-radius: 1vw;
+  padding: 1.5vw;
+  width: 25vw;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  height: 27vw;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
 }
   
-.RegistroContainer h2,.IniciarContainer h2 {
+.RegistroContainer h2{
   font-size: 1.5em;
   color: white;
   text-align: justify;
 }
-  
+.IniciarContainer h2{
+  font-size: 2vw;
+  color: white;
+  text-align: justify;
+  text-align: center;
+} 
 .RegistroContainer form, .IniciarContainer form {
   display: flex;
   flex-direction: column;
-  gap: 1vw;
+  gap: 2vw;
   height: min-content;
 }
   
@@ -118,6 +173,5 @@ body{
 }
   
 .RegistroContainer button:hover, .IniciarContainer button:hover {
-  background-color: #0056b3;
+  background-color: #ccc;
 }
-  

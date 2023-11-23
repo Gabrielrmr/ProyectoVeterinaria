@@ -14,10 +14,9 @@ class UserController extends conexion
 
         return $result;
     }
-    public function update(User $usuario) {
+    public function update($value) {
         $connection = $this->connect();
-        $sql = "UPDATE User SET username = '{$usuario->username}', email = '{$usuario->email}', password = '{$usuario->password}'
-        WHERE id = '{$usuario->id}';";
+        $sql = "UPDATE User SET $value';";
 
         $resultado = $connection->query($sql);
 
