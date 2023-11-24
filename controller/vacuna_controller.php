@@ -47,7 +47,14 @@ class VacunaController extends conexion
             }
         }
     
-        return $vacunas;
+        return $result;
+    }
+    public function vacinasAdministradas($id) {
+        $connection = $this->connect();
+        $sql = "select  v.id, count(c.Vacuna_id) as cantidad from vacuna as v left join ControlVacuna as c on v.id = c.Vacuna_id WHERE id = '$id' group by v.id ; ";
+        $result = $connection->query($sql);
+        foreach ($result as $num) {$resul = $num;};
+        return $resul;
     }
 }
 

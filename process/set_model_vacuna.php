@@ -12,7 +12,7 @@ require_once(__DIR__ ."/../model/vacuna.php");
             // Obtener conexio Forma 1
             $mysqli = (new conexion) ->connect();
             $modelVacuna = (new Vacuna);
-            $modelVacuna -> nombre = $mysqli->real_escape_string($_POST['nombreVacuna']);
+            $modelVacuna -> nombre = $mysqli->real_escape_string($_POST['AgregarVacuna']);
             (new VacunaController) -> create($modelVacuna);
         }
         public function updateModel (){

@@ -64,12 +64,15 @@ main{
     position: relative;
 }
 .MostraTabla{
+    display: flex;
     background-color: rgb(89 89 133);
     width: 67vw;
     height: 36vw;
     position: absolute;
     left: 4vw;
     border-radius: 3vw;
+    justify-content: center;
+    align-items: center;
 }
 .OpcionesUsuario article{
     display: flex;

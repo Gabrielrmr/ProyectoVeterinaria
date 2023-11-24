@@ -3,10 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container_principal_vacunas{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 60vw;
+    border: 0.1vw solid black;
+    height: 30vw;
+    align-items: center;
+    padding-top: 2vw;
+}
+.container_principal_vacunas h1{
+    color: white;
+
+}
 .AgregarVacuna{
     display: flex;
     align-items: center;
-    gap: 10vw;
+    gap: 4vw;
+    width: 43vw;
 }
 .AgregarVacuna button{
     background-color: #42426d;
@@ -17,6 +32,64 @@
     color: white;
     font-size: 0.7vw;
 }
-.Table_Vacunas{
+.agregar_vacunas_form{
+    display: flex;
+    gap: 1vw;
+}
+.table__vacunas{
+    display: flex;
+    flex-direction: column;
+    border: 0.1vw solid black;
+}
+.table__content{
+    width: 43vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.fila{
+    width: 5vw;
+}
+.nombre,.vacunas_administradas{
+    width: 11vw;
+}
+.table__row{
+    display: grid;
+    width: max-content;
+    grid-template-columns: 5vw 11vw 11vw 16vw;
+    border: 0.1vw solid black;
+    height: 3vw;
+}
+.table__column{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 0.1vw solid black;
+    align-items: center;
+}
+.input_modificador {
+    width: 6vw;
+    display: none;
+}
+.input__Delete,.input__Update{
+    width: 100%;
+    background-color: #42426d;
+    color: white;
+    border: none;
+    width: 4vw;
+    height: 2vw;
+    border-radius: 0.6vw;
+}
 
+.table__button{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    border-right: none;
+}
+.table__header{
+    display: flex;
+    height: 1.6vw;
 }
